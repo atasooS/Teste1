@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body {/* Estilo do corpo */
+    background-color: black;
+    background-image: url('2898329.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribui o conteúdo verticalmente */
+    height: 100vh;
+    margin: 0;
+    padding: 20px 0; /* Adiciona padding para evitar que o conteúdo toque as bordas da tela */
+}
+h1 {/* Estilo do h1 */
+    color: white;
+    font-family: 'Lora', serif;
+    text-align: center;
+    margin-top: 50px; /* Ajusta o espaçamento superior */
+}
+p {/* Estilo dos paragrafos */
+    color: white;
+    font-family: 'Lora', serif;
+    text-align: center;
+    width: 80%;
+    font-size: x-large;
+    margin: 20px 0; /* Ajusta o espaçamento vertical dos parágrafos */
+}
+hr {/* Estilo da linha */
+    border: none; /* Remove qualquer borda padrão */
+    height: 1px; /* Define a altura da linha */
+    background-color: white; /* Define a cor da linha */
+    width: 100%; /* Define a largura da linha */
+    margin: 0; /* Remove espaçamento vertical */
+}
+.textopequeno {/* Div que deixa o texto pequeno e embaixo da página */
+    font-size: medium; /* Define um tamanho de fonte menor para o último parágrafo */
+    margin: 10px 0 20px; /* Ajusta o espaçamento */
+    width: 100%; /* Mantém a mesma largura que o <hr> */
+    text-align: center; /* Centraliza o texto */
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto; /* Empurra para o rodapé */
+}

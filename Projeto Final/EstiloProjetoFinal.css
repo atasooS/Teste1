@@ -1,0 +1,231 @@
+@charset "UTF_8";
+
+body {/*Estilo do corpo*/
+    background-color: black;
+    background-image: url('2898329.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: white;
+}
+
+h3 {/*estilo do titulo h3*/
+    font-size: 1.5em;
+    font-family: 'Lora', serif;
+    color: #fff;
+    position: absolute;
+    top: 125px;
+    right: 20px;
+    text-align: right;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+p {/* Estilo dos paragrafos */
+    color: white;
+    font-family: 'Lora', serif;
+    width: 50%;
+    font-size: large;
+}
+
+h1 {/* Estilo do título de nivel 1 */
+    color: white;
+    font-family: 'Lora', serif;
+    text-align: center;
+}
+
+ul {/* estilo da lista nao ordenada */
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {/* estilo da lista nao ordenada com os itens */
+    position: relative;
+    padding-left: 1.5em;
+    line-height: 1.6;
+    color: white;
+    font-family: 'Lora', serif;
+}
+
+ul li::before {/*Esse before significa que ele vem depois do ul e li e que eles se complementam*/
+    content: "•";
+    color: white;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+    line-height: inherit;
+    vertical-align: middle;
+    top: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapa {/*Define os elementos do mapa*/
+    display: flex;
+    align-items: center;
+    margin-top: 20px;/*define que fica a 20 pixels do topo da página*/
+}
+
+.area-mapa {/* Div da area do mapa */
+    margin-right: 20px;
+}
+
+.botao-mapa {/* div para o botao do lado do mapa */
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    overflow: hidden; /*Tudo que ultrapassa os limites do container nao vai aparecer*/
+}
+
+.lista {/* estilo da lista do lado do mapa */
+    margin: 0;
+    padding: 0;
+}
+
+.lista li { 
+    margin-bottom: 10px;/*Fica a 10 pixels da borda*/
+}
+
+.link-botao-mapa {/*define os elementos do botao que fica ao lado da mapa*/
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: background-color 0.3s;
+}
+
+.link-botao-mapa:hover {/*Deixa o botao de outra cor quando passa o mapa por cima*/
+    background-color: #0056b3;
+}
+
+.imagem-do-mapa {/* imagem do mapa  */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caixa {/* Caixa branca que contem a imagem do mapa */
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    position: absolute;
+    top: 180px;
+    right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.ab {/* estilo do link */
+    position: absolute;
+    top: 400px;
+    right: 50px;/*deixa o link a 50 pixels da margem direita da pagina*/
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: background-color 0.3s;
+}
+
+.ab:hover {/* a cor muda quando o mouse pasa por cima */
+    background-color: #0056b3;/*a cor do borao muda se passar o ponteiro do mouse em cima*/
+}
+
+
+
+/* Estilo da Segunda Página */
+.body_SegundaPagina {/* EStilo do corpo da segunda pagina */
+    background-color: black;
+    background-image: url('2898329.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.h1_SegundaPagina {/* estilo dos titulos de primeiro nivel da segunda página */
+    color: white;
+    font-family: 'Lora', serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login {/* Div da parte de login da pagina */
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {/* Estilo das formas */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {/* Estilo do label */
+    font-family: 'Lora', serif;
+    color: white;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {/* Estilo do select */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 300px;
+}
+
+button {/* Estilo do butao de enviar */
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+button:hover {/* a cor do botão muda quando o mouse pasa por cima */
+    background-color: #0056b3;
+}
+
+.link-botao-login {/* div do link do botao */
+    color: white;
+    text-decoration: none;
+}
+
+.link-botao-login:hover {/* Acor do link muda quando mouse passa por cima */
+    text-decoration: underline;
+}

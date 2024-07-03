@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcar Horário</title>
+    <link rel="stylesheet" href="EstiloProjetoFinal.css">
+</head>
+<body class="body_SegundaPagina">
+    <div class="h1_SegundaPagina">
+        <h1>Agendamento de horário</h1>
+    </div>
+    <div class="login">
+        <form action="#" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" >
+
+            <label for="date">Data do Agendamento:</label>
+            <input type="date" id="date" name="date" >
+
+            <label for="time">Hora do Agendamento:</label>
+            <input type="time" id="time" name="time" >
+
+            <label for="pagamento">Método de Pagamento:</label>
+            <select id="pagamento" name="pagamento" >
+                <option></option>
+                <option value="pix">Pix</option>
+                <option value="pagamento_na_hora">Pagamento na hora</option>
+            </select>
+
+            <label for="estilo">O que você vai fazer?</label>
+            <select id="estilo" name="estilo" required>
+                <option></option>
+                <option value="Corte">Corte</option>
+                <option value="Luzes">Luzes</option>
+                <option value="penteado">Penteado</option>
+                <option value="pintura">pintura</option>
+                <option value="progressiva">progressiva</option>
+
+
+            </select>
+            <button type="submit"><a href="HorarioMarcado.html" class="button-link">enviar</a></button>
+        </form>
+    </div>
+</body>
+</html>
